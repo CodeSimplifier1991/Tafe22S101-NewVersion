@@ -74,7 +74,7 @@
 				<!--Currency Conversion-->
 				<Button
 					x:Name="currencyConversionBtn"
-					Content="Mortgage Calculator"
+					Content="Currency Calculator"
 					Click="currencyConversionBtn_Click"/>
 
 				<!--Exit Button-->

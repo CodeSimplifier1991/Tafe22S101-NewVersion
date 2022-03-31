@@ -27,24 +27,38 @@ namespace Calculator
 			this.InitializeComponent();
 		}
 
+
+		// START --------- Math Calculator Button Click ------------------
 		private void mathCalculator_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Frame.Navigate(typeof(MainPage), null);
 		}
+		// END --------- Math Calculator Button Click ------------------
 
+
+		// START --------- Mortgage Calculator Button Click ------------------
 		private void mortgageCalculator_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Frame.Navigate(typeof(MortgageCalculator), null);
 		}
+		// END --------- Mortgage Calculator Button Click ------------------
 
+
+		// START --------- Currency Conversion Button Click ------------------
 		private void currencyConversionBtn_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Frame.Navigate(typeof(CurrencyConversion), null);
 		}
+		// END --------- Currency Conversion Button Click ------------------
 
+
+		// START --------- Exit Button Click ------------------
 		private void exitBtn_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Frame.Navigate(typeof(MainMenu));
 		}
+		// START --------- Exit Button Click ------------------
+
 	}
+	// MainMenu
 }
