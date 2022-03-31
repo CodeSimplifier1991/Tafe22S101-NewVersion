@@ -57,7 +57,7 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(MainMenu));
 		}
-		// START --------- Exit Button Click ------------------
+		// END --------- Exit Button Click ------------------
 
 	}
 	// MainMenu
