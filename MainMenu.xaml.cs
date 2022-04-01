@@ -23,6 +23,7 @@ using Windows.UI.Xaml.Navigation;
  Note: Two feature branches merged successfully into the latest development branch.
 
  Merged the development branch with the release branch.
+ Merged the release branch with the local master branch.
  */
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
