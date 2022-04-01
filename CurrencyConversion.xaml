@@ -8,10 +8,162 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-		<TextBlock
-			Text="Currency Conversion"
-			FontSize="35"
-			Foreground="White"/>
+	<!--START - STYLES-->
+	<Page.Resources>
+
+		<!--START - BlockText Styles-->
+		<Style TargetType="TextBlock">
+			<Setter Property="Foreground" Value="Black"/>
+		</Style>
+		<!--END - BlockText Styles-->
+
+	</Page.Resources>
+	<!--END - STYLES-->
+
+
+	<Grid>
+		<!--START - Main Stack Panel Convers the whole screen-->
+		<StackPanel
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			Padding="15"
+			Background="White">
+
+
+			<!--START - Currency Conversion Calculatro text-->
+			<TextBlock
+				Text="Currency Conversion Calculator"
+				FontSize="35"
+				FontWeight="Bold"/>
+			<!--END - Currency Conversion Calculatro text-->
+
+
+			<!--START - Top Stack panel contains the inputs-->
+			<StackPanel
+				HorizontalAlignment="Center"
+				Orientation="Horizontal"
+				Margin="10 15 10 0"
+				Padding="10">
+
+				<!--START - Stack Panel 1 - Amount Text & Box-->
+				<StackPanel>
+
+					<!--Text-->
+					<TextBlock
+						Text="Amount $"
+						FontSize="30"/>
+
+					<!--Box-->
+					<TextBox
+						Background="White"
+						Width="150"
+						BorderBrush="Gray"
+						Margin="0 0 20 0"/>
+
+				</StackPanel>
+				<!--END - Stack Panel 1 - Amount Text & Box-->
+
+				<!--START - Stack Panel 2 - From Text & Box-->
+				<StackPanel>
+
+					<!--Text-->
+					<TextBlock
+						Text="From"
+						FontSize="30"/>
+
+					<ComboBox
+						Width="150"
+						Background="White"
+						BorderBrush="Gray"
+						Foreground="Black"
+						Margin="0 0 20 0">
+						<ComboBoxItem>USD - US Dollar</ComboBoxItem>
+						<ComboBoxItem>EUR - Euro</ComboBoxItem>
+						<ComboBoxItem>GBP - British Pound</ComboBoxItem>
+						<ComboBoxItem>INR - Indian Rupee</ComboBoxItem>
+					</ComboBox>
+
+				</StackPanel>
+				<!--END - Stack Panel 2 - From Text & Box-->
+
+				<!--START - Stack Panel 3 - To Text & Box-->
+				<StackPanel>
+
+					<!--Text-->
+					<TextBlock
+						Text="To"
+						FontSize="30"/>
+
+					<ComboBox
+						Width="150"
+						Background="White"
+						BorderBrush="Gray"
+						Foreground="Black"
+						Margin="0 0 20 0">
+						<ComboBoxItem>USD - US Dollar</ComboBoxItem>
+						<ComboBoxItem>EUR - Euro</ComboBoxItem>
+						<ComboBoxItem>GBP - British Pound</ComboBoxItem>
+						<ComboBoxItem>INR - Indian Rupee</ComboBoxItem>
+					</ComboBox>
+
+				</StackPanel>
+				<!--END - Stack Panel 3 - To Text & Box-->
+
+			</StackPanel>
+			<!--END - Top Stack panel contains the inputs-->
+
+			<!--START - Bottom Stack Panel Contains the conversions output-->
+			<StackPanel
+				Margin="20 10 0 0">
+
+				<!--From Currency-->
+				<TextBlock
+					Text="1000 US Dollar = "
+					FontSize="13"
+					Margin="0 0 0 15"/>
+
+				<!--To Currency-->
+				<TextBlock
+					Text="$728.7243 British Pounds"
+					FontSize="25"
+					Margin="0 0 0 15"/>
+
+				<!--Rate From-->
+				<TextBlock
+					Text="1 US Dollar = 0.728724 British Pound"
+					FontSize="13"
+					Margin="0 0 0 15"/>
+
+				<!--Rate To-->
+				<TextBlock
+					Text="1 British Pound = 1.3719 US Dollar "
+					FontSize="13"
+					Margin="0 0 0 15"/>
+			</StackPanel>
+			<!--END - Bottom Stack Panel Contains the conversions output-->
+
+
+			<!--START - Currency Conversion Button-->
+			<Button
+				Content="Currency Conversion"
+				Background="LightGray"
+				Foreground="Black"
+				HorizontalAlignment="Center"
+				Width="150"
+				Margin="0 20 0 10"/>
+			<!--END - Currency Conversion Button-->
+
+
+			<!--START - Exit Button-->
+			<Button
+				Content="Exit"
+				Background="LightGray"
+				Foreground="Black"
+				HorizontalAlignment="Center"
+				Width="150"/>
+			<!--END - Exit Button-->
+
+		</StackPanel>
+		<!--END - Main Stack Panel Convers the whole screen-->
 	</Grid>
 </Page>
