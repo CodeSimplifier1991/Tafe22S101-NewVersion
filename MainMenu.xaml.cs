@@ -19,6 +19,7 @@ using Windows.UI.Xaml.Navigation;
  Date: 1/04/2022
  Version: V2.0
  Merge: from Mortgage Feature to development branch
+ Merge 2: From Currency conversion to the latest development branch.
  */
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
