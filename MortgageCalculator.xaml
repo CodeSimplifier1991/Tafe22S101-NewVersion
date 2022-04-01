@@ -8,10 +8,168 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+	<!--START - Styles-->
+	<Page.Resources>
+
+		<!--START - TextBlock Styles-->
+		<Style TargetType="TextBlock">
+			<Setter Property="Width" Value="150"/>
+			<Setter Property="Foreground" Value="Black"/>
+		</Style>
+		<!--END - TextBlock Styles-->
+
+		
+		<!--START - TextBox Styles-->
+		<Style TargetType="TextBox">
+			<Setter Property="Width" Value="150"/>
+			<Setter Property="Background" Value="White"/>
+			<Setter Property="BorderBrush" Value="Gray"/>
+			<Setter Property="Margin" Value="15 0 0 0"/>
+			<Setter Property="Foreground" Value="Black"/>
+		</Style>
+		<!--END - TextBox Styles-->
+	</Page.Resources>
+	<!--ENDs - Styles-->
+
     <Grid>
-		<TextBlock
-			Text="Mortgage Calculator"
-			FontSize="35"
-			Foreground="White"/>
+		<!--START - Main Stack Panel covers the whole screen-->
+		<StackPanel
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			Padding="15"
+			Background="White">
+
+			<!--START - Mortgageg Calculator Text-->
+			<TextBlock
+				Text="Mortgage Calculator"
+				FontWeight="Bold"
+				FontSize="35"
+				Width="Auto"/>
+			<!--END - Mortgageg Calculator Text-->
+
+			<!--START - Stack Panel contains the inputs for the loan-->
+			<StackPanel
+				Margin="0 20 0 0">
+
+				<!--START - Stack Panel 1 - Principal loan amount Text & Box-->
+				<StackPanel
+					Orientation="Horizontal"
+					Margin="0 10 0 0">
+
+					<!--Text-->
+					<TextBlock
+						Text="Principal borrow $ :"/>
+
+					<!--Box-->
+					<TextBox
+						x:Name="principalLoanAmountBox"/>
+				</StackPanel>
+				<!--END - Stack Panel 1 - Principal loan amount Text & Box-->
+
+				<!--START - Stack Panel 2 - Years of the loan Text & Box-->
+				<StackPanel
+					Orientation="Horizontal"
+					Margin="0 10 0 0">
+
+					<!--Text-->
+					<TextBlock
+						Text="Years:"/>
+
+					<!--Box-->
+					<TextBox
+						x:Name="yearsOfTheLoanBox"/>
+				</StackPanel>
+				<!--END - Stack Panel 2 - Years of the loan Text & Box-->
+
+				<!--START - Stack Panel 3 - Months of the loan Text & Box-->
+				<StackPanel
+					Orientation="Horizontal"
+					Margin="0 10 0 0">
+
+					<!--Text-->
+					<TextBlock
+						Text="and Months:"/>
+
+					<!--Box-->
+					<TextBox
+						x:Name="andMonthOfTheLoanBox"/>
+				</StackPanel>
+				<!--END - Stack Panel 3 - Month of the loan Text & Box-->
+
+				<!--START - Stack Panel 4 - Yearly Interest Rate Text & Box-->
+				<StackPanel
+					Orientation="Horizontal"
+					Margin="0 10 0 0">
+
+					<!--Text-->
+					<TextBlock
+						Text="Yearly Interest Rate:"/>
+
+					<!--Box-->
+					<TextBox
+						x:Name="yearlyInterestRateBox"/>
+				</StackPanel>
+				<!--END - Stack Panel 4 - Yearly Interest Rate Text & Box-->
+
+				<!--START - Stack Panel 5 - Monthly Interest Rate Text & Box-->
+				<StackPanel
+					Orientation="Horizontal"
+					Margin="0 10 0 0">
+
+					<!--Text-->
+					<TextBlock
+						Text="Monthly Interest Rate:"/>
+
+					<!--Box-->
+					<TextBox
+						x:Name="monthlyInterestRateBox"
+						IsReadOnly="True"/>
+				</StackPanel>
+				<!--END - Stack Panel 5 - Monthly Interest Rate Text & Box-->
+
+				<!--START - Stack Panel 6 - Monthly Repayment Text & Box-->
+				<StackPanel
+					Orientation="Horizontal"
+					Margin="0 10 0 0">
+
+					<!--Text-->
+					<TextBlock
+						Text="Monthly Repayment $:"/>
+
+					<!--Box-->
+					<TextBox
+						x:Name="monthlyRepaymentBox"
+						IsReadOnly="True"/>
+				</StackPanel>
+				<!--END - Stack Panel 6 - Monthly Repayment Text & Box-->
+			</StackPanel>
+			<!--END - Stack Panel contains the inputs for the loan-->
+
+			<!--START - Calculate Button-->
+			<Button
+				x:Name="calculateBtn"
+				Content="Calculate"
+				Width="150"
+				HorizontalAlignment="Center"
+				Foreground="Black"
+				Background="LightGray"
+				Margin="0 25 0 0"
+				Click="calculateBtn_Click"/>
+			<!--END - Calculate Button-->
+
+			<!--START - Exit Button-->
+			<Button
+				x:Name="exitBtn"
+				Content="Exit"
+				Width="150"
+				HorizontalAlignment="Center"
+				Foreground="Black"
+				Background="LightGray"
+				Margin="0 10 0 0"
+				Click="exitBtn_Click"/>
+			<!--END - Exit Button-->
+			
+		</StackPanel>
+		<!--END - Main Stack Panel covers the whole screen-->
 	</Grid>
 </Page>
