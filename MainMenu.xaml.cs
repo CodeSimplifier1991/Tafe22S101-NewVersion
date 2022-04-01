@@ -13,6 +13,14 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
+/*
+ Author: Behzad Pourdarab
+ Date: 1/04/2022
+ Version: V2.0
+ Merge: from Mortgage Feature to development branch
+ */
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Calculator
