@@ -66,6 +66,14 @@ namespace Calculator
 		// END --------- Currency Conversion Button Click ------------------
 
 
+		// START --------- Trip Calculator Button Click ------------------
+		private void tripCalculatorBtn_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(TripCalculator), null);
+		}
+		// END --------- Trip Calculator Button Click ------------------
+
+
 		// START --------- Exit Button Click ------------------
 		private void exitBtn_Click(object sender, RoutedEventArgs e)
 		{
