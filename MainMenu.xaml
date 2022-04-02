@@ -77,6 +77,12 @@
 					Content="Currency Calculator"
 					Click="currencyConversionBtn_Click"/>
 
+				<!--Trip Calculator-->
+				<Button
+					x:Name="tripCalculatorBtn"
+					Content="Trip Calculator"
+					Click="tripCalculatorBtn_Click"/>
+
 				<!--Exit Button-->
 				<Button
 					x:Name="exitBtn"
