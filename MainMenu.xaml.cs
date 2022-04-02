@@ -27,6 +27,7 @@ using Windows.UI.Xaml.Navigation;
  Created tage V2.0 based on the latest version of the master branch.
 
  Added the Trip Calculator button.
+ Fixed a building issue due to lack of the other machine's capability.
  */
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
